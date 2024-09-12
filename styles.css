@@ -70,3 +70,15 @@ body{
     color: #3f3e3e;
 }
 
+.formInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput  >* {
+    margin-top: 0.5rem;
+}
+
+.submit{
+    margin-top: 1rem;
+}
