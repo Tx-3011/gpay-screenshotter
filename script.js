@@ -4,11 +4,15 @@ const price = document.querySelector("#price");
 const newPrice = document.querySelector("#newPrice");
 const merchant = document.querySelector("#merchant");
 const newMerchant = document.querySelector("#newMerchant");
-const submit = document.querySelector("#submit")
+const submit = document.querySelector("#submit");
+const dateAndTime = document.querySelector("#dateTime");
 
 
 
 let clickCount = 0;
+let day;
+let month;
+let year;
 
 tick.addEventListener('click',()=>{
     clickCount++;
@@ -27,8 +31,21 @@ const updateInfo = (function(){
         merchant.textContent = `Paid to ${newMerchant.value}`;
     }
 
+    function date(){
+        const date = new Date();
+        day = date.getDate();
+        month = date.toLocaleString('default', { month: 'long' });
+        year = date.getFullYear();
+
+        let DateTime = `${day} ${month} ${year}`
+        dateAndTime.textContent = DateTime
+
+
+    }
+
     return {
         details,
+        date,
     }
 
 })()
@@ -40,3 +57,5 @@ submit.addEventListener('click',()=>{
 
     dialogBox.close();
 })
+
+updateInfo.date();
