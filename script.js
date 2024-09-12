@@ -57,5 +57,3 @@ submit.addEventListener('click',()=>{
 
     dialogBox.close();
 })
-
-updateInfo.date();
