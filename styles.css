@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+    --darkModeColor: #131313;
+    --darkModeTxtColor: #b9bbba;
+    --lightModeColor: white;
+    --lightModeColorTxt: black;
+}
+
 body{
     font-family: 'Roboto',Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #131313;
+    color: #e5e5e5;
+
+
 }
 
 .price{
@@ -59,7 +70,8 @@ body{
 }
 
 .dateTime{
-    color: black;
+    /* color: black; */
+    color: #dcdcdc;
     font-size: 13px;
     font-weight: 500;
 
@@ -74,7 +86,8 @@ body{
 
 .transID,
 .upiInfo{
-    color: #6b6b6b;
+    /* color: #6b6b6b; */
+    color: #b9bbba;
 }
 
 .formInput{
@@ -88,4 +101,14 @@ body{
 
 .submit{
     margin-top: 1rem;
+}
+
+@media (prefer-color-scheme: dark){
+    body{
+        background-color: #131313;
+    }
+
+    .price{
+        color: #e5e5e5;
+    }
 }
