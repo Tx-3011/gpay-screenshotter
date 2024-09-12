@@ -23,7 +23,7 @@ tick.addEventListener('click',()=>{
 const updateInfo = (function(){
 
     function details(){
-        price.textContent = `₹${newPrice.value}`;
+        price.textContent = `₹${newPrice.value}.00`;
         merchant.textContent = `Paid to ${newMerchant.value}`;
     }
 
