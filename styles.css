@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body{
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +55,11 @@ body{
 }
 
 .dateTime{
-    font-weight: 550;
+    font-weight: 510;
 }
 
 .transID{
-    font-weight: 100;
+    /* font-weight: 100; */
 }
 
 
@@ -69,8 +69,8 @@ body{
     margin-top: 0rem;
 }
 
-.upiInfo,
-.upiId{
-    color: #333333;
+.transID,
+.upiInfo{
+    color: #3f3e3e;
 }
 
