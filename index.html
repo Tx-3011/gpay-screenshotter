@@ -5,29 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gpay</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
     <div class="content" id="content">
 
-    <div class="blueTick" id="blueTick">
+        <div class="blueTick" id="blueTick">
+        </div>
+
+        <div class="priceDiv" id="priceDiv">
+            <p class="price" id="price"> ₹90.00</p>
+        </div>
+
+        <div class="details" id="details">
+            <p class="merchant" id="merchant">Paid to PhonePeMerchant</p>
+            <p class="upiInfo" id="upiInfo">UPI ID: q635249570@ybl</p>
+        </div>
+
+        <div class="endDeets" id="endDeets">
+            <p class="dateTime" id="dateTime">30 July 2024, 12:22 pm</p>
+            <p class="transID" id="transID">UPI transaction ID: 269363062943</p>
     </div>
 
-    <div class="priceDiv" id="priceDiv">
-        <p class="price" id="price"> ₹90.00</p>
     </div>
 
-    <div class="details" id="details">
-        <p class="merchant" id="merchant">Paid to PhonePeMerchant</p>
-        <p class="upiInfo" id="upiInfo">UPI ID: q635249570@ybl</p>
-    </div>
+    <dialog id="newInput" class="newInput">
 
-    <div class="endDeets" id="endDeets">
-        <p class="dateTime" id="dateTime">30 July 2024, 12:22 pm</p>
-        <p class="transID" id="transID">UPI transaction ID: 269363062943</p>
-    </div>
+        <form class="formInput" id="formInput">
 
-    </div>
+            <label for="newPrice">Enter amount: </label>
+            <input type="number" class="newPrice" id="newPrice">
+
+            <label for="newMerchant">Enter Merchant: </label>
+            <input type="text" id="newMerchant" class="newMerchant">
+
+            <button type="submit" id="submit" class="submit">Submit</button>
+
+        </form>
+
+    </dialog>
     
 </body>
 </html>
